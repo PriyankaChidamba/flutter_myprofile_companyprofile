@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_page_view_priyanga/app_data.dart';
+
+import 'appdata_text.dart';
 
 class DisplayText extends StatelessWidget {
   final AppDataText appDataText;
@@ -8,11 +9,22 @@ class DisplayText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 400,
-      width: 300,
-
-      child: Text(appDataText.Text,textAlign: TextAlign.center,style: TextStyle(fontSize: 20),),
-    );
+    return Stack(children: [
+      Container(
+          decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(70),
+        color: Colors.cyan,
+      )),
+      Center(
+        child: Text(
+          appDataText.Text,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 20,
+            color: Colors.white
+          ),
+        ),
+      )
+    ]);
   }
 }

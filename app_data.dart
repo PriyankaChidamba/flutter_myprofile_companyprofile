@@ -1,14 +1,14 @@
-class AppDataText{
-  final String Text;
+class AppData{
+  final String image;
 
-  AppDataText(this.Text);
+  AppData(this.image);
 
 }
-List<AppDataText> appdatatext=[
-  AppDataText('Man is least himself when he\n talks in his own person'),
-  AppDataText('I can resist everything \nexcept temptation'),
-  AppDataText('True friends stab you in the front'),
-  AppDataText('Always forgive your enemies;\n nothing annoys them so much'),
-  AppDataText('A mans face is his autobiography'),
-  
+List<AppData> appdataList=[
+  AppData('images/design1.jpg'),
+  AppData('images/design2.jpg'),
+  AppData('images/design3.jpg'),
+  AppData('images/design4.jpg'),
+  AppData('images/design5.jpg'),
+
 ];
